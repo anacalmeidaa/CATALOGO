@@ -1,0 +1,79 @@
+.div {
+   display: flexbox;
+   flex-direction: row;
+   text-align: center;
+   align-items: center;
+   background-color: #222052;
+   border-radius: 1.5em;
+    
+}
+
+.divPrincipal {
+  
+    margin: 0;
+    border: 0;
+    border-radius: 2em;
+}
+
+.titulo {
+color: #D2B48A;
+}
+.catalogo {
+color: #B7B7B7;
+}
+
+h1 {
+    color: #000;
+    border: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #D2BC9A;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.busca {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 0.8em;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.busca label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: bold;
+}
+
+.busca input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #222052;
+    border-radius: 0.5em;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.busca input:focus {
+    outline: none;
+    border-color: #D2B48A;
+    box-shadow: 0 0 5px rgba(210, 180, 138, 0.5);
+}
+
+.catalogo {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.sem-resultados {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: #666;
+    font-size: 18px;
+    padding: 40px;
+}
