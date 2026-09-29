@@ -10,8 +10,6 @@ h1{
 }
 
 .div {
-    display: flex;
-    flex-direction: column;
     text-align: center;              /*div pequenininha*/
     justify-content: center;
     align-items: center;
@@ -24,7 +22,6 @@ h1{
 }
 
 .divPrincipal {
-    display: flex;
     justify-content: center;
     align-items: center;
     margin: 0;
