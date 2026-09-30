@@ -12,7 +12,7 @@ divPrincipal.classList.add('divPrincipal');
 
 let produtos = [
     ['Red Velvet Supremo', 'https://www.google.com/imgres?q=bolo%20red%20velvet&imgurl=https%3A%2F%2Fdinorma.com.br%2Fwp-content%2Fuploads%2F2019%2F11%2FSite-produtos-Bolo-Red-Velvet-02.png&imgrefurl=https%3A%2F%2Fdinorma.com.br%2Fprodutos%2Fbolo-semi-naked-red-velvet%2F&docid=qlbPYqnDvKJxVM&tbnid=NA3kJWNHwolw5M&vet=12ahUKEwiuoveus5aXAxX1KrkGHQK2Gj0QnPAOegQINhAA..i&w=835&h=835&hcb=2&ved=2ahUKEwiuoveus5aXAxX1KrkGHQK2Gj0QnPAOegQINhAA','Massa aveludada com toque de cacau, recheio cremoso de cream cheese artesanal e geleia de morango.', 'Fatia de Bolo','R$ 18,90'],
-    ['Éclair de Pistache', '', 'Clássica bomba francesa com massa choux leve, recheio de brigadeiro de pistache e cobertura de chocolate.', 'Doce Francês', 'R$ 16,50'],
+    ['Éclair de Pistache', 'https://boulangerieepifanny.com/wp-content/uploads/2025/12/eclair_pistache_boulangerie_epifanny.jpg', 'Clássica bomba francesa com massa choux leve, recheio de brigadeiro de pistache e cobertura de chocolate.', 'Doce Francês', 'R$ 16,50'],
     ['Cookies Triplo Chocolate', '', 'Cookie americano com casquinha crocante, massa de baunilha e gotas de chocolate ao leite, meio amargo e branco.', 'Cookies', 'R$ 12,00'],
     ['Banoffee na Taça', '', 'Camadas de biscoito amanteigado, doce de leite cozido, bananas frescas fatiadas e cobertura leve de chantilly.', 'Sobremesa', 'R$ 22,00'],
     ['Macaron de Frutas Vermelhas', '', 'Doce francês com casquinha crocante, recheado com ganache de chocolate branco e redução de frutas vermelhas.', 'Doce Francês', 'R$ 8,50'],
