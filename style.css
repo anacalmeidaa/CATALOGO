@@ -1,10 +1,14 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+
+
 * {
     border: 0;
     margin: 0;
     padding: 0;
 }
 
-h1{
+h1 {
     display: flex;
     justify-content: center;
 }
@@ -13,15 +17,21 @@ h1{
     text-align: center;              /*div pequenininha*/
     justify-content: center;
     align-items: center;
-    width: 990px;
-    height: 150px;
+    width: 500px;
+    height: 250px;
     gap: 10px;
-    background-color: #222052;
+    background-color: #ce3ba2;
     border-radius: 40px;
+    transition: transform 0.3s ease;
+}
 
+.div:hover {
+    transform: scale(1.05);
 }
 
 .divPrincipal {
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     margin: 0;
@@ -30,13 +40,30 @@ h1{
     margin-top: 20px;
 }
 
+
+
 .titulo {
     color: #D2B48A;
-    margin-top: 20px;
+    margin-top: 15px;
+    margin-bottom: 7px;
+}
+
+.img {
+    display: flex;
+    height: 150px;
+    margin-top: 7px;
+    margin-bottom: 7px;
 }
 
 h1 {
-    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Cookie", cursive;
+    font-size: 80px;
+    height: 100px;
+    color: #4b2b07;
     border: 0;
     margin: 0;
 }
@@ -48,30 +75,36 @@ h5 {
 }
 
 body {
-    background-color: #D2BC9A;
+    background-color: #fae9b9;
     padding: 20px;
     font-family: Arial, sans-serif;
 }
 
 .busca {
-    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fcf9d4;
+    width: 90%;
     padding: 15px;
     border-radius: 4px;
     margin-bottom: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px #ce3ba2;
+    transition: transform 0.3s ease;
 }
 
-.busca label {
-    display: block;
-    margin-bottom: 8px;
-    color: #333;
-    font-weight: bold;
+.busca ::placeholder{
+    color: #4b2b07;
+}
+
+.busca:hover {
+     transform: scale(1.05);
 }
 
 .busca input {
     width: 100%;
     padding: 10px;
-    border: 2px solid #222052;
+    border: 2px solid #f1ea879a;
     border-radius: 10px;
     font-size: 14px;
     box-sizing: border-box;
