@@ -8,9 +8,28 @@
     padding: 0;
 }
 
+body {
+    background-color: #ebdfbf;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.catalogo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    color: #B7B7B7;
+}
+
 h1 {
     display: flex;
     justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Cookie", cursive;
+    font-size: 80px;
+    height: 100px;
+    color: #4b2b07;
 }
 
 .div {
@@ -18,9 +37,9 @@ h1 {
     justify-content: center;
     align-items: center;
     width: 500px;
-    height: 250px;
+    height: 333px;
     gap: 10px;
-    background-color: #ce3ba2;
+    background-color: #b63790;
     border-radius: 40px;
     transition: transform 0.3s ease;
 }
@@ -40,49 +59,43 @@ h1 {
     margin-top: 20px;
 }
 
-
-
 .titulo {
-    color: #D2B48A;
+    color: #cca56e;
     margin-top: 15px;
     margin-bottom: 7px;
 }
 
-.img {
-    display: flex;
-    height: 150px;
-    margin-top: 7px;
+.imagem {
+    display: block;
+    width: 260px;
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin: 7px auto;
+    margin-bottom: 10px;
+    border-radius: 12px;
 }
 
-h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-family: "Cookie", cursive;
-    font-size: 80px;
-    height: 100px;
+.p2 {
+    color: #cca56e;
+}
+
+.precos {
     color: #4b2b07;
-    border: 0;
-    margin: 0;
-}
-
-body {
-    background-color: #fae9b9;
-    padding: 20px;
-    font-family: Arial, sans-serif;
+    font-size: 14px;
+    margin-top: 1px;
 }
 
 .busca {
     display: flex;
-    justify-content: center;
     align-items: center;
+    margin-inline: auto;
     background-color: #fcf9d4;
     width: 90%;
     padding: 15px;
     border-radius: 4px;
     margin-bottom: 20px;
-    box-shadow: 0 2px 5px #ce3ba2;
+    box-shadow: 0 3px 5px 2px #ce3ba2;
     transition: transform 0.3s ease;
 }
 
@@ -91,7 +104,7 @@ body {
 }
 
 .busca:hover {
-     transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 .busca input {
