@@ -26,7 +26,7 @@ function mostrarProdutos(listaProdutos) {
 
     listaProdutos.forEach((produto) => {
     let div = document.createElement('div');
-    div.classList.add('div');
+    div.classList.add('div');//div pequeninha
 
     let titulo = document.createElement('h3');
     titulo.textContent = produto[0];

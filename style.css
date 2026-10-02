@@ -1,8 +1,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
 
-
 * {
+    box-sizing: border-box;
     border: 0;
     margin: 0;
     padding: 0;
@@ -10,15 +10,17 @@
 
 body {
     background-color: #ebdfbf;
-    padding: 20px;
     font-family: Arial, sans-serif;
+    line-height: 1.5;
 }
 
-.catalogo {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    color: #B7B7B7;
+.header {
+    background-image: url(imagemcerta.png);
+    background-size: cover;
+    background-position: center 35%;
+    padding: 0.5rem 1rem 1rem;
+    border-radius: 0 0 2rem 2rem;
+    min-height: 11rem;
 }
 
 h1 {
@@ -27,53 +29,65 @@ h1 {
     align-items: center;
     text-align: center;
     font-family: "Cookie", cursive;
-    font-size: 80px;
-    height: 100px;
+    font-size: clamp(3rem, 7vw, 5rem);
+    min-height: 5.625rem;
     color: #4b2b07;
+    padding-top: 0.5rem;
+}
+
+.catalogo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.25rem;
+    color: #B7B7B7;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 1.25rem 1rem 2.5rem;
+}
+
+.divPrincipal {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 1.25rem;
+    width: 100%;
+    margin-top: 1.25rem;
 }
 
 .div {
-    text-align: center;              /*div pequenininha*/
+    text-align: center;
     justify-content: center;
     align-items: center;
-    width: 500px;
-    height: 333px;
-    gap: 10px;
+    width: min(100%, 31.25rem);
+    min-width: 0;
     background-color: #b63790;
-    border-radius: 40px;
+    border-radius: 2.5rem;
+    padding: 0 1.125rem 1.125rem;
     transition: transform 0.3s ease;
+   
 }
 
 .div:hover {
     transform: scale(1.05);
 }
 
-.divPrincipal {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    border: 0;
-    border-radius: 20px;                 /*div grandona*/
-    margin-top: 20px;
-}
-
 .titulo {
     color: #cca56e;
-    margin-top: 15px;
-    margin-bottom: 7px;
+    margin-top: 0.9375rem;
+    margin-bottom: 0.4375rem;
 }
 
 .imagem {
     display: block;
-    width: 260px;
-    max-width: 100%;
-    height: 200px;
+    width: 100%;
+    max-width: 16.25rem;
+    height: 12.5rem;
     object-fit: cover;
-    margin: 7px auto;
-    margin-bottom: 10px;
-    border-radius: 12px;
+    margin: 0.4375rem auto 0.625rem;
+    border-radius: 0.75rem;
 }
 
 .p2 {
@@ -82,24 +96,23 @@ h1 {
 
 .precos {
     color: #4b2b07;
-    font-size: 14px;
-    margin-top: 1px;
+    font-size: 0.875rem;
+    margin-top: 0.0625rem;
 }
 
 .busca {
     display: flex;
     align-items: center;
-    margin-inline: auto;
+    margin: 0 auto 2rem;
     background-color: #fcf9d4;
-    width: 90%;
-    padding: 15px;
-    border-radius: 4px;
-    margin-bottom: 20px;
-    box-shadow: 0 3px 5px 2px #ce3ba2;
+    width: min(90%, 56.25rem);
+    padding: 0.9375rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 0.1875rem 0.3125rem 0.125rem #ce3ba2;
     transition: transform 0.3s ease;
 }
 
-.busca ::placeholder{
+.busca ::placeholder {
     color: #4b2b07;
 }
 
@@ -109,15 +122,56 @@ h1 {
 
 .busca input {
     width: 100%;
-    padding: 10px;
-    border: 2px solid #f1ea879a;
-    border-radius: 10px;
-    font-size: 14px;
+    padding: 0.625rem;
+    border: 0.125rem solid #f1ea879a;
+    border-radius: 0.625rem;
+    font-size: 0.875rem;
     box-sizing: border-box;
 }
 
 .busca input:focus {
     outline: none;
     border-color: #D2B48A;
-    box-shadow: 0 0 5px rgba(210, 180, 138, 0.5);
+    box-shadow: 0 0 0.3125rem rgba(210, 180, 138, 0.5);
+}
+
+@media (max-width: 48rem) {
+    .header {
+        min-height: auto;
+        padding-bottom: 1rem;
+    }
+
+    .busca {
+        width: calc(100% - 1.5rem);
+        margin-bottom: 1.5rem;
+    }
+
+    .div {
+        flex-basis: calc(50% - 1.25rem);
+    }
+}
+
+@media (max-width: 30rem) {
+    .catalogo {
+        padding: 1rem 0.75rem 1.875rem;
+    }
+
+    .divPrincipal {
+        gap: 0.875rem;
+    }
+
+    .div {
+        flex-basis: 100%;
+        width: 100%;
+        padding: 0 0.75rem 1rem;
+    }
+
+    .imagem {
+        max-width: 100%;
+        height: 11.25rem;
+    }
+
+    .busca input {
+        font-size: 1rem;
+    }
 }
